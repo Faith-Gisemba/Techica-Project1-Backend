@@ -24,7 +24,7 @@ class CustomerService:
     def __init__(self):
         self.orderss = []
 
-    def place_order(self, customer, productcs):
+    def place_order(self, customer, products):
         order = Order(customer, products)
         self.orderss.append(order)
         return order
